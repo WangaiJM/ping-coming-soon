@@ -81,6 +81,8 @@ img {
   font-weight: 600;
   color: var(--color-danger);
   font-style: italic;
+}
+.d-error {
   display: none;
 }
 .btn {
