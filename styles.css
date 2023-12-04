@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+:root {
+  --color-primary: hsl(223, 87%, 63%);
+  --color-secondary: hsl(223, 100%, 88%);
+  --color-danger: hsl(354, 100%, 66%);
+  --color-secondary-variant: hsl(0, 0%, 59%);
+  --color-primary-variant: hsl(209, 33%, 12%);
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 2rem;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.main__header {
+  padding: 7rem 0;
+  text-align: center;
+}
+.logo {
+  margin-bottom: 3rem;
+}
+.title {
+  color: var(--color-secondary-variant);
+  font-weight: 300;
+  font-size: 4.8rem;
+  margin-bottom: 2rem;
+}
+.title span {
+  font-weight: 700;
+  color: var(--color-primary-variant);
+}
+.sub-title {
+  font-weight: 600;
+  color: var(--color-primary-variant);
+  margin-bottom: 2rem;
+}
+.subscription {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.subscription__email {
+  position: relative;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.email {
+  padding: 1.5rem 2rem;
+  border-radius: 10rem;
+  border: 1px solid var(--color-secondary);
+  margin-right: 1rem;
+  outline: 0;
+}
+.email::placeholder {
+  color: var(--color-secondary);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.error {
+  font-size: 1.2rem;
+  align-self: start;
+  margin: 0.2rem 0 0 2rem;
+  font-weight: 600;
+  color: var(--color-danger);
+  font-style: italic;
+  display: none;
+}
+.btn {
+  padding: 1.5rem 2rem;
+  width: 20%;
+  border-radius: 10rem;
+  background-color: var(--color-primary);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: 0;
+  box-shadow: 0 3px 10px 0 var(--color-secondary);
+  cursor: pointer;
+}
+main > .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.dashboard {
+  width: 60%;
+}
+.footer {
+  text-align: center;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+.icons i {
+  color: var(--color-primary);
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.footer p {
+  font-size: 1.5rem;
+  color: var(--color-secondary-variant);
+  font-weight: 300;
+}
+.icons i:hover {
+  color: white;
+  background-color: var(--color-primary);
+}
+@media screen and (max-width: 450px) {
+  .container {
+    width: 87%;
+    margin: 0 auto;
+  }
+  .title {
+    font-size: 2.8rem;
+  }
+  .sub-title {
+    font-size: 1.6rem;
+  }
+  .subscription {
+    display: block;
+  }
+  .subscription__email {
+    width: 100%;
+  }
+  .email {
+    margin: 0;
+  }
+  .error {
+    align-self: center;
+    margin-bottom: 0.5rem;
+  }
+  .btn {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .dashboard {
+    width: 100%;
+  }
+  .footer p {
+    font-size: 1.2rem;
+  }
+}
